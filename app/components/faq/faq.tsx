@@ -20,7 +20,7 @@ const FAQ: React.FC<FAQProps> = ({ className }) => {
             Frequently Asked <span className="text-[#00000099]"></span>
             Questions
           </h2>
-          <p className="mt-[16px] w-[65%] leading-[32px] font-manrope text-[16px] font-normal text-[#00000099]">
+          <p className="mt-[16px] w-full md:w-[65%] leading-[32px] font-manrope text-[16px] font-normal text-[#00000099]">
             Find quick answers to common queries in our FAQs section, designed
             to address your most pressing questions and provide you with the
             information you need.
