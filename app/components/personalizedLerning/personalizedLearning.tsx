@@ -7,7 +7,7 @@ import Logo from "@/public/orangelogo.svg";
 
 const PersonalizedLearning = () => {
   return (
-    <div className="bg-black mb-[9em] px-[3em] ">
+    <div className="bg-black lg:mb-[9em] lg:px-[3em] mb-[6em]">
       <div className="flex flex-col lg:flex-row justify-between 2xl:justify-center lg:px-[5em] items-center w-full lg:p-10 px-[2em]">
         {/* First Text Section */}
         <div className=" lg:flex-col font-cocon text-white lg:w-[30%] mb-3 mt-[1em] hidden lg:block ">

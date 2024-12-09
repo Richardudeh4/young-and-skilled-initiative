@@ -56,7 +56,7 @@ const OurStory = () => {
             className="w-full h-[149px] md:h-[200px] lg:h-full object-cover lg:rounded-lg shadow-lg"
           />
         </div>
-        <div className=" mt-[12px] lg:mt-0 lg:space-y-4 flex gap-1 items-center justify-between lg:block ">
+        <div className=" mt-[12px] lg:mt-0 lg:space-y-4 flex gap-1 items-center justify-between lg:block rounded-lg overflow-hidden">
           <Image
             src={Story5}
             alt="Story 5"
