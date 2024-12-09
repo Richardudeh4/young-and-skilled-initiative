@@ -1,5 +1,5 @@
+import React from "react"
 import Image from "next/image";
-import React from "react";
 import Star from "@/public/cstar.svg";
 import Star2 from "@/public/stargreen.svg";
 import Man from "@/public/man.gif";
