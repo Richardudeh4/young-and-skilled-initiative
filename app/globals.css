@@ -121,3 +121,8 @@
   font-weight: 400;
   font-style: normal;
 }
+
+#nprogress .bar {
+  background: #29d; /* Change the color */
+  height: 3px;      /* Change the height */
+}
