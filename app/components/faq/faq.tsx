@@ -39,19 +39,23 @@ const FAQ: React.FC<FAQProps> = ({ className }) => {
                 className="lg:w-full bg-[#F6F6F6] border-none rounded-[10px] px-[32px] transition-colors duration-200 ease-in-out hover:bg-[#1A1A1A] hover:text-white"
                 value={question}
               >
-                <AccordionTrigger className="no-underline hover:no-underline text-[9.8px] lg:text-[16px] font-cocon font-medium">
-                  {question}
-                </AccordionTrigger>
-                <AccordionContent className="text-[9.8px] lg:text-[16px]">
-                  {answer}
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          ))}
+                <AccordionItem
+                  className="lg:w-full bg-[#F6F6F6] border-none rounded-[10px] px-[32px] transition-colors duration-200 ease-in-out hover:bg-[#1A1A1A] hover:text-white"
+                  value={question}
+                >
+                  <AccordionTrigger className="no-underline hover:no-underline text-[9.8px] lg:text-[16px] font-cocon font-medium">
+                    {question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-[9.8px] lg:text-[16px]">
+                    {answer}
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-  );
-};
-
-export default FAQ;
+    );
+  };
+  
+  export default FAQ;
