@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
         >
           <span
             ref={underlineRef}
-            className="absolute bottom-0 h-[3px] bg-dark-green transition-all duration-300"
+            className="absolute bottom-0 h-0.5 sm:h-[3px] bg-dark-green transition-all duration-300"
             style={hoverStyle}
           ></span>
 
@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
               key={item.id}
               href={item.link}
               id={item.id} // Add id to each link for active link tracking
-              className={`relative group text-base font-semibold transition-all p-[6px] text-nowrap duration-200 ${
+              className={`relative group text-sm lg:text-base font-semibold transition-all p-[6px] text-nowrap duration-200 ${
                 pathname === item.link ? "text-black" : "text-ash"
               } hover:text-black`}
               onMouseEnter={handleMouseEnter}
