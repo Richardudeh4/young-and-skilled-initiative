@@ -26,7 +26,7 @@ const TeamMembers: React.FC = () => {
             src={activeMember.image}
             alt={activeMember.name}
             width={500}  // Set appropriate width for the image
-            height={500} // Set appropriate height for the image
+            height={400} // Set appropriate height for the image
             className="h-auto object-cover rounded-[1.25rem]"
           />
         </div>
@@ -39,7 +39,7 @@ const TeamMembers: React.FC = () => {
               className={`flex justify-between px-4 py-2 md:py-3 xl:py-4 xl:pr-12 items-center w-full border rounded-lg transition-colors duration-700 ease-linear 
               ${
                 activeMember.id === member.id
-                  ? "border bg-orange-500 text-white"
+                  ? "border bg-[#F2A300] text-white"
                   : "border-green-600"
               }`}
               onMouseEnter={() => handleHover(member)}
@@ -63,9 +63,9 @@ const TeamMembers: React.FC = () => {
                 <a
                   href={member.instagram}
                   target="_blank"
-                  className={`p-2 md:p-3 xl:p-4 text-xl rounded-[0.625rem] transition-colors duration-700 ease-linear ${
+                  className={`p-2 md:p-3 xl:p-4 text-xl rounded-[0.625rem] transition-colors duration-500 ease-linear ${
                     activeMember.id === member.id
-                      ? "bg-white text-yellow-1 "
+                      ? "bg-dark-green text-[#F2A300]"
                       : "bg-dark-green text-white"
                   }`}
                 >
@@ -74,9 +74,9 @@ const TeamMembers: React.FC = () => {
                 <a
                   href={member.linkedin}
                   target="_blank"
-                  className={`p-2 md:p-3 xl:p-4 text-xl rounded-[0.625rem] transition-colors duration-700 ease-linear ${
+                  className={`p-2 md:p-3 xl:p-4 text-xl rounded-[0.625rem] transition-colors duration-500 ease-linear ${
                     activeMember.id === member.id
-                      ? "bg-white text-yellow-1 "
+                      ? "bg-dark-green text-[#F2A300] "
                       : "bg-dark-green text-white"
                   }`}
                 >
