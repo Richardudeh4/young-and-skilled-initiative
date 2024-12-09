@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { LogoMain } from "@/public/images";
 
 const navlinks = [
   { route: "Home", link: "/", id: "home" },
@@ -63,20 +64,17 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <div className="w-full bg-white lg:px-[4em] xl:px-[8em] px-4 py-6 flex justify-between gap-6 lg:py-12">
+      <div className="w-full bg-white lg:px-[3em] xl:px-[8em] px-4 py-6 flex justify-between gap-6 lg:py-12">
         <Link href="/">
           <Image
-            src="/images/logo-main.svg"
+            src={LogoMain}
             alt="Logo"
-            width={60}
-            height={33}
-            className="w-[60px] h-[33px] sm:w-auto sm:h-auto"
           />
         </Link>
 
         {/* Desktop menu */}
         <div
-          className="relative hidden md:flex items-center justify-between gap-2 lg:gap-10 text-black"
+          className="relative hidden md:flex items-center justify-between gap-2 lg:gap-8 text-black"
           onMouseLeave={handleMouseLeave}
         >
           <span
@@ -110,7 +108,7 @@ const Navbar: React.FC = () => {
           </Button>
           <Button
             size={"icon"}
-            className="rounded-full bg-dark-green ml-[-6px] transform transition-transform duration-500 ease-in-out group-hover:rotate-90"
+            className="rounded-full hidden lg:inline-flex bg-dark-green ml-[-6px] transform transition-transform duration-500 ease-in-out group-hover:rotate-90"
           >
             <Image src="/arrow.svg" alt="Arrow" width={24} height={24} className="p-2" />
           </Button>
